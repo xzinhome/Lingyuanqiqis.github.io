@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小卓的窝</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .section {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>小卓的窝</h1>
+    </header>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#about">关于我们</a>
+        <a href="https://yqqs.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5" target="_blank">Wiki</a>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <h2>欢迎来到小卓的窝</h2>
+            <p>这里是我们的首页，您可以在这里找到我们提供元气骑士的服务和更多信息。</p>
+        </div>
+        <div class="section">
+            <h2>关于我们</h2>
+            <p>我建这个群的初衷是想玩玩元气（不止），聊会天之类的，我在学校也属于比较安静这种（社恐），但在这不一样了，可以收获到很多快乐，仿佛是一种全新的体验。我也比较热情，有啥事@我，我有空就会回的，也希望能越来越多人入群吧，感谢大家入群（*＾ワ＾*）</p>
+        </div>
+        <div class="section">
+            <h2>Wiki</h2>
+            <p>好消息，好消息，本群已经接通“元气骑士wiki”服务，只需要点击wiki即可查询元气骑士海量内容，快去试试吧！</p>
+        </div>
+    </div>
+    <!-- 添加B站视频 -->
+    <div style="display: flex; justify-content: center; gap: 20px; padding: 20px;">
+        
+        <iframe src="https://player.bilibili.com/player.html?bvid=BV1vWvZeKEnP" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <p>版权所有 &copy; 小卓的窝 2024</p>
+    </footer>
+</body>
+</html>
